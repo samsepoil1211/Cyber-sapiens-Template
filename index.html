@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShieldCommerce - Enterprise E-Commerce Cybersecurity Solutions</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0056b3',secondary:'#ff6b35'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=modern%20cybersecurity%20concept%20with%20digital%20shield%20protecting%20e-commerce%20data%2C%20blue%20gradient%20background%20with%20subtle%20digital%20elements%2C%20abstract%20technology%20pattern%2C%20high-tech%20security%20visualization%2C%20professional%20clean%20design&width=1600&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.hero-content {
+background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.custom-checkbox {
+position: relative;
+display: inline-block;
+width: 20px;
+height: 20px;
+border: 2px solid #0056b3;
+border-radius: 4px;
+transition: all 0.2s;
+}
+.custom-checkbox.checked {
+background-color: #0056b3;
+}
+.custom-checkbox.checked:after {
+content: '';
+position: absolute;
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.toggle-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+}
+.toggle-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 24px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #0056b3;
+}
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+.feature-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.pricing-card:hover {
+transform: scale(1.02);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+<div class="container mx-auto px-4 py-4 flex items-center justify-between">
+<div class="flex items-center">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary mr-10">CyberSapiens</a>
+<nav class="hidden md:flex space-x-8">
+<a href="#solutions" class="text-gray-700 hover:text-primary font-medium">Solutions</a>
+<a href="#features" class="text-gray-700 hover:text-primary font-medium">Features</a>
+<a href="#pricing" class="text-gray-700 hover:text-primary font-medium">Pricing</a>
+<a href="#about" class="text-gray-700 hover:text-primary font-medium">About Us</a>
+<a href="#contact" class="text-gray-700 hover:text-primary font-medium">Contact</a>
+</nav>
+</div>
+<div class="flex items-center space-x-4">
+<a href="#login" class="text-gray-700 hover:text-primary font-medium whitespace-nowrap">Log In</a>
+<a href="#signup" class="bg-primary text-white px-4 py-2 rounded-button font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">Sign Up</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile menu -->
+<div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+<nav class="flex flex-col space-y-3">
+<a href="#solutions" class="text-gray-700 hover:text-primary font-medium py-2">Solutions</a>
+<a href="#features" class="text-gray-700 hover:text-primary font-medium py-2">Features</a>
+<a href="#pricing" class="text-gray-700 hover:text-primary font-medium py-2">Pricing</a>
+<a href="#about" class="text-gray-700 hover:text-primary font-medium py-2">About Us</a>
+<a href="#contact" class="text-gray-700 hover:text-primary font-medium py-2">Contact</a>
+</nav>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section relative min-h-[600px] flex items-center">
+<div class="container mx-auto px-4 py-16 w-full">
+<div class="hero-content max-w-3xl p-8 md:p-12 rounded-lg">
+<div class="flex items-center mb-6 space-x-2">
+<div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full text-white">
+<i class="ri-shield-check-line"></i>
+</div>
+<span class="text-primary font-semibold">Enterprise-Grade Security</span>
+</div>
+<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Protecting Your E-Commerce Empire From Digital Threats</h1>
+<p class="text-lg text-gray-600 mb-8">Advanced cybersecurity solutions designed specifically for online retailers. Protect customer data, secure transactions, and build trust with enterprise-level security infrastructure.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#pricing" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-blue-700 transition-colors text-center !rounded-button whitespace-nowrap">Get Protected Now</a>
+<a href="#demo" class="bg-white text-primary border border-primary px-6 py-3 rounded-button font-medium hover:bg-gray-50 transition-colors text-center !rounded-button whitespace-nowrap">Schedule Demo</a>
+</div>
+<div class="mt-8 flex items-center space-x-6">
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-green-500">
+<i class="ri-check-line ri-lg"></i>
+</div>
+<span class="ml-2 text-sm text-gray-600">PCI DSS Compliant</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-green-500">
+<i class="ri-check-line ri-lg"></i>
+</div>
+<span class="ml-2 text-sm text-gray-600">GDPR Ready</span>
+</div>
+<div class="flex items-center">
+<div class="w-6 h-6 flex items-center justify-center text-green-500">
+<i class="ri-check-line ri-lg"></i>
+</div>
+<span class="ml-2 text-sm text-gray-600">24/7 Monitoring</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Badges -->
+<section class="bg-white py-8 border-y border-gray-200">
+<div class="container mx-auto px-4">
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-shield-check-fill ri-lg"></i>
+</div>
+<span class="ml-2 font-medium text-gray-700">ISO 27001</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-lock-fill ri-lg"></i>
+</div>
+<span class="ml-2 font-medium text-gray-700">PCI DSS</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-global-fill ri-lg"></i>
+</div>
+<span class="ml-2 font-medium text-gray-700">GDPR Compliant</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-secure-payment-fill ri-lg"></i>
+</div>
+<span class="ml-2 font-medium text-gray-700">SOC 2 Type II</span>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-fingerprint-fill ri-lg"></i>
+</div>
+<span class="ml-2 font-medium text-gray-700">NIST Framework</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Features -->
+<section id="features" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Comprehensive Security Features</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Our advanced security solutions protect your e-commerce business at every level, from customer data to payment processing.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="feature-card bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-primary mb-4">
+<i class="ri-shield-keyhole-line ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Fraud Detection & Prevention</h3>
+<p class="text-gray-600 mb-4">Advanced AI-powered system that identifies suspicious activities and prevents fraudulent transactions in real-time.</p>
+<button class="text-primary font-medium flex items-center hover:underline learn-more-btn">
+Learn more
+<i class="ri-arrow-down-line ml-1"></i>
+</button>
+<div class="learn-more-content hidden mt-4 p-4 bg-gray-50 rounded-lg">
+<p class="text-gray-600 text-sm">Our advanced AI-powered fraud detection system uses machine learning algorithms to analyze transaction patterns in real-time. It identifies suspicious activities, blocks fraudulent transactions, and adapts to new fraud patterns automatically. Features include:</p>
+<ul class="mt-2 space-y-1 text-sm text-gray-600">
+<li>• Real-time transaction monitoring</li>
+<li>• Pattern recognition and analysis</li>
+<li>• Automated risk scoring</li>
+<li>• Custom rule configuration</li>
+<li>• Detailed fraud reports</li>
+</ul>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="feature-card bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-primary mb-4">
+<i class="ri-lock-password-line ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Data Encryption</h3>
+<p class="text-gray-600 mb-4">End-to-end encryption for all sensitive data, ensuring customer information remains secure during storage and transmission.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Feature 3 -->
+<div class="feature-card bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-primary mb-4">
+<i class="ri-secure-payment-line ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Secure Payment Gateway</h3>
+<p class="text-gray-600 mb-4">PCI DSS compliant payment processing with multi-layer security protocols to protect financial transactions.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Feature 4 -->
+<div class="feature-card bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-primary mb-4">
+<i class="ri-database-2-line ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">DDoS Protection</h3>
+<p class="text-gray-600 mb-4">Enterprise-grade infrastructure that mitigates distributed denial-of-service attacks, ensuring your store stays online.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Feature 5 -->
+<div class="feature-card bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-primary mb-4">
+<i class="ri-user-settings-line ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">Identity & Access Management</h3>
+<p class="text-gray-600 mb-4">Multi-factor authentication and role-based access control to protect administrative accounts and backend systems.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+<!-- Feature 6 -->
+<div class="feature-card bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-primary mb-4">
+<i class="ri-radar-line ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-800 mb-3">24/7 Threat Monitoring</h3>
+<p class="text-gray-600 mb-4">Continuous security monitoring with real-time alerts and automated responses to potential security threats.</p>
+<a href="#" class="text-primary font-medium flex items-center hover:underline">
+Learn more
+<i class="ri-arrow-right-line ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Benefits -->
+<section id="solutions" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="w-full lg:w-1/2">
+<h2 class="text-3xl font-bold text-gray-800 mb-6">Enterprise-Level Security For Your Growing Business</h2>
+<p class="text-gray-600 mb-8">Our comprehensive security solutions are designed to scale with your business, providing enterprise-grade protection without enterprise-level complexity or cost.</p>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mt-1">
+<i class="ri-check-line ri-lg"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Reduced Fraud Losses</h4>
+<p class="text-gray-600">Cut chargebacks and fraudulent transactions by up to 98% with our AI-powered fraud detection system.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mt-1">
+<i class="ri-check-line ri-lg"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Regulatory Compliance</h4>
+<p class="text-gray-600">Stay compliant with GDPR, PCI DSS, and other regulations with our built-in compliance tools.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mt-1">
+<i class="ri-check-line ri-lg"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Customer Trust</h4>
+<p class="text-gray-600">Build customer confidence with visible security badges and seamless security measures.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-primary mt-1">
+<i class="ri-check-line ri-lg"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Business Continuity</h4>
+<p class="text-gray-600">Ensure your store remains operational with 99.99% uptime guarantee and DDoS protection.</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<a href="#contact" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-blue-700 transition-colors inline-block !rounded-button whitespace-nowrap">Talk to Security Expert</a>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=modern%20security%20dashboard%20interface%20with%20charts%2C%20graphs%2C%20and%20security%20metrics%2C%20showing%20threat%20detection%20and%20prevention%20statistics%2C%20professional%20clean%20design%2C%20blue%20color%20scheme%2C%20high-tech%20visualization%20of%20cybersecurity%20data&width=600&height=500&seq=2&orientation=landscape" alt="Security Dashboard" class="w-full h-auto rounded-t-lg">
+<div class="p-6 bg-gray-50 border-t border-gray-200">
+<div class="flex items-center justify-between mb-4">
+<h4 class="font-semibold text-gray-800">Security Status: <span class="text-green-500">Protected</span></h4>
+<div class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-medium">All Systems Operational</div>
+</div>
+<div class="grid grid-cols-3 gap-4 mb-4">
+<div class="bg-white p-3 rounded shadow-sm">
+<p class="text-xs text-gray-500">Threats Blocked</p>
+<p class="text-xl font-semibold text-gray-800">1,247</p>
+</div>
+<div class="bg-white p-3 rounded shadow-sm">
+<p class="text-xs text-gray-500">Uptime</p>
+<p class="text-xl font-semibold text-gray-800">99.99%</p>
+</div>
+<div class="bg-white p-3 rounded shadow-sm">
+<p class="text-xs text-gray-500">Security Score</p>
+<p class="text-xl font-semibold text-gray-800">A+</p>
+</div>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-sm text-gray-500">Last scan: Today, 10:45 AM</span>
+<button class="text-primary text-sm font-medium hover:underline">View Full Report</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-16 bg-primary text-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Trusted by E-Commerce Leaders</h2>
+<p class="max-w-2xl mx-auto opacity-90">Join thousands of online retailers who trust our security solutions to protect their business and customers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-4xl font-bold mb-2">5,200+</div>
+<p class="opacity-90">Active Merchants</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold mb-2">$4.2B</div>
+<p class="opacity-90">Transactions Protected</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold mb-2">98.7%</div>
+<p class="opacity-90">Fraud Reduction</p>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold mb-2">24/7</div>
+<p class="opacity-90">Security Monitoring</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Hear from e-commerce businesses that have transformed their security posture with our solutions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-double-quotes-l ri-2x"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"Since implementing ShieldCommerce, we've seen a 95% reduction in fraudulent transactions and chargebacks. The ROI has been incredible, and our customers feel more secure shopping with us."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500">
+<i class="ri-user-3-line ri-lg"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Michael Thompson</h4>
+<p class="text-gray-500 text-sm">CTO, FashionHub</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-double-quotes-l ri-2x"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"The compliance tools alone are worth the investment. We were able to achieve PCI DSS compliance in record time, and the ongoing monitoring gives us peace of mind that we're always protected."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500">
+<i class="ri-user-3-line ri-lg"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+<p class="text-gray-500 text-sm">CEO, ElectroMarket</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<i class="ri-double-quotes-l ri-2x"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"As a small business, we couldn't afford a security breach. ShieldCommerce provides enterprise-level security at a price point that makes sense for our growing business. Customer trust has never been higher."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500">
+<i class="ri-user-3-line ri-lg"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">David Rodriguez</h4>
+<p class="text-gray-500 text-sm">Owner, ArtisanGoods</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section id="pricing" class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-800 mb-4">Security Plans For Every Business</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Choose the right security package for your e-commerce business, from startups to enterprise retailers.</p>
+<div class="flex justify-center items-center mt-8">
+<span class="text-gray-600 mr-3">Monthly</span>
+<label class="toggle-switch">
+<input type="checkbox" id="billing-toggle">
+<span class="slider"></span>
+</label>
+<span class="text-gray-600 ml-3">Annual <span class="text-green-500 text-sm font-medium">Save 20%</span></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Basic Plan -->
+<div class="pricing-card bg-white border border-gray-200 rounded-lg overflow-hidden transition-transform duration-300">
+<div class="p-6 border-b border-gray-200">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Basic Security</h3>
+<p class="text-gray-600 mb-4">Essential protection for small stores</p>
+<div class="flex items-baseline">
+<span class="text-3xl font-bold text-gray-800" id="basic-price">$49</span>
+<span class="text-gray-500 ml-1">/month</span>
+</div>
+</div>
+<div class="p-6">
+<ul class="space-y-3 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Basic fraud detection</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">SSL certificate</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">PCI DSS compliance tools</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Daily security scans</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Email support</span>
+</li>
+</ul>
+<button class="w-full bg-white text-primary border border-primary py-2 rounded-button font-medium hover:bg-gray-50 transition-colors !rounded-button whitespace-nowrap" id="basic-plan-button">Choose Plan</button>
+</div>
+</div>
+<!-- Professional Plan -->
+<div class="pricing-card bg-white border-2 border-primary rounded-lg overflow-hidden shadow-md transition-transform duration-300 transform scale-105">
+<div class="bg-primary text-white py-2 text-center text-sm font-medium">
+MOST POPULAR
+</div>
+<div class="p-6 border-b border-gray-200">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Professional</h3>
+<p class="text-gray-600 mb-4">Advanced security for growing businesses</p>
+<div class="flex items-baseline">
+<span class="text-3xl font-bold text-gray-800" id="pro-price">$149</span>
+<span class="text-gray-500 ml-1">/month</span>
+</div>
+</div>
+<div class="p-6">
+<ul class="space-y-3 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Advanced AI fraud detection</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">DDoS protection</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Two-factor authentication</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Real-time monitoring</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Priority support 24/5</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Security trust badges</span>
+</li>
+</ul>
+<button class="w-full bg-primary text-white py-2 rounded-button font-medium hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap" id="pro-plan-button">Choose Plan</button>
+</div>
+</div>
+<!-- Enterprise Plan -->
+<div class="pricing-card bg-white border border-gray-200 rounded-lg overflow-hidden transition-transform duration-300">
+<div class="p-6 border-b border-gray-200">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Enterprise</h3>
+<p class="text-gray-600 mb-4">Maximum security for large retailers</p>
+<div class="flex items-baseline">
+<span class="text-3xl font-bold text-gray-800" id="enterprise-price">$399</span>
+<span class="text-gray-500 ml-1">/month</span>
+</div>
+</div>
+<div class="p-6">
+<ul class="space-y-3 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Everything in Professional</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Custom security rules</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Advanced user permissions</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Dedicated security expert</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">24/7 priority support</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-green-500 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-3 text-gray-600">Custom SLA</span>
+</li>
+</ul>
+<button class="w-full bg-white text-primary border border-primary py-2 rounded-button font-medium hover:bg-gray-50 transition-colors !rounded-button whitespace-nowrap" id="enterprise-plan-button">Choose Plan</button>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="text-gray-600 mb-4">All plans include a 14-day free trial. No credit card required.</p>
+<div class="flex justify-center space-x-6">
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-google-pay-fill ri-lg"></i>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-paypal-fill ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 bg-gray-900 text-white">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold mb-6">Ready to Secure Your E-Commerce Business?</h2>
+<p class="text-gray-300 mb-8">Join thousands of online retailers who trust ShieldCommerce to protect their business and customers. Get started today with our 14-day free trial.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+<button id="open-demo-modal" class="bg-white text-gray-900 px-6 py-3 rounded-button font-medium hover:bg-gray-100 transition-colors text-center !rounded-button whitespace-nowrap">Schedule Demo</button>
+<a href="#signup" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-blue-700 transition-colors text-center !rounded-button whitespace-nowrap">Start Free Trial</a>
+</div>
+<div class="flex justify-center items-center">
+<div class="w-6 h-6 flex items-center justify-center text-green-400">
+<i class="ri-shield-check-line"></i>
+</div>
+<span class="ml-2 text-gray-300">30-day money-back guarantee</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-5xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h2 class="text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
+<p class="text-gray-600 mb-8">Have questions about our security solutions? Our team of experts is here to help you find the right protection for your e-commerce business.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full text-primary">
+<i class="ri-mail-line"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Email Us</h4>
+<p class="text-gray-600">pauldebjit1211@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full text-primary">
+<i class="ri-phone-line"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Call Us</h4>
+<p class="text-gray-600">+1 (800) 123-4567</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full text-primary">
+<i class="ri-map-pin-line"></i>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold text-gray-800">Visit Us</h4>
+<p class="text-gray-600">123 Security Ave, Suite 500<br>San Francisco, CA 94107</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<h3 class="text-xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+<form id="contact-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+<div>
+<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary" placeholder="Your name">
+</div>
+<div>
+<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary" placeholder="your@email.com">
+</div>
+</div>
+<div class="mb-4">
+<label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company</label>
+<input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary" placeholder="Your company name">
+</div>
+<div class="mb-4">
+<label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+<select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary pr-8 appearance-none">
+<option value="">Select a subject</option>
+<option value="sales">Sales Inquiry</option>
+<option value="support">Technical Support</option>
+<option value="demo">Request a Demo</option>
+<option value="partnership">Partnership Opportunity</option>
+</select>
+</div>
+<div class="mb-6">
+<label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+<textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary" placeholder="How can we help you?"></textarea>
+</div>
+<div class="flex items-center mb-6">
+<div class="custom-checkbox" id="privacy-checkbox"></div>
+<label for="privacy-checkbox" class="ml-3 text-sm text-gray-600">I agree to the <a href="#" class="text-primary hover:underline">Privacy Policy</a> and <a href="#" class="text-primary hover:underline">Terms of Service</a>.</label>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+<div class="lg:col-span-2">
+<a href="#" class="text-3xl font-['Pacifico'] text-white mb-4 inline-block">logo</a>
+<p class="text-gray-400 mb-6">Enterprise-grade cybersecurity solutions designed specifically for e-commerce businesses. Protecting your online store and customer data 24/7.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-twitter-x-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Partners</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Products</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fraud Protection</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Data Security</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Compliance Tools</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">DDoS Protection</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Security Monitoring</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Status</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<p class="text-gray-400">&copy; 2025 ShieldCommerce. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+<div class="flex items-center space-x-3 ml-4">
+<div class="w-8 h-8 flex items-center justify-center text-gray-400">
+<i class="ri-google-pay-fill ri-lg"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center text-gray-400">
+<i class="ri-paypal-fill ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Chat Widget -->
+<div class="fixed bottom-6 right-6 z-50" id="chat-widget">
+<button class="w-14 h-14 bg-primary rounded-full shadow-lg flex items-center justify-center text-white hover:bg-blue-700 transition-colors" id="chat-button">
+<i class="ri-message-3-line ri-lg"></i>
+</button>
+<div class="hidden bg-white rounded-lg shadow-xl overflow-hidden w-80" id="chat-popup">
+<div class="bg-primary text-white p-4 flex justify-between items-center">
+<h4 class="font-semibold">Security Expert</h4>
+<button class="text-white hover:text-gray-200" id="close-chat">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<div class="p-4 h-80 overflow-y-auto bg-gray-50" id="chat-messages">
+<div class="flex mb-4">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+<i class="ri-customer-service-2-line"></i>
+</div>
+<div class="ml-3 bg-gray-200 rounded-lg py-2 px-4 max-w-[80%]">
+<p class="text-gray-700">Hi there! How can I help you with your e-commerce security needs today?</p>
+</div>
+</div>
+</div>
+<div class="p-4 border-t border-gray-200">
+<div class="flex">
+<input type="text" placeholder="Type your message..." class="flex-1 px-3 py-2 border border-gray-300 rounded-l focus:outline-none focus:ring-1 focus:ring-primary">
+<button class="bg-primary text-white px-4 rounded-r hover:bg-blue-700 transition-colors">
+<i class="ri-send-plane-fill"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Cookie Consent -->
+<div class="fixed bottom-0 left-0 right-0 bg-white shadow-md p-4 flex flex-col md:flex-row justify-between items-center z-40" id="cookie-banner">
+<div class="mb-4 md:mb-0 md:mr-4">
+<p class="text-gray-700">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+</div>
+<div class="flex space-x-3">
+<button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-300 transition-colors !rounded-button whitespace-nowrap" id="decline-cookies">Decline</button>
+<button class="bg-primary text-white px-4 py-2 rounded-button font-medium hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap" id="accept-cookies">Accept All Cookies</button>
+</div>
+</div>
+<!-- PayPal SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=AQDyqqntF2fJPQIxZl2Mxz4Cs_SiP8b1xtJmJ0FkNNFrnaacByhLuAW1C8BAiPp3fwdtDNy_zGhY4zRh&currency=USD"></script>
+
+<!-- Payment Modal -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="payment-modal">
+  <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4">
+    <div class="p-6 border-b border-gray-200 flex justify-between items-center">
+      <h3 class="text-xl font-bold text-gray-800">Complete Your Purchase</h3>
+      <button class="text-gray-500 hover:text-gray-700" id="close-payment-modal">
+        <i class="ri-close-line ri-lg"></i>
+      </button>
+    </div>
+    <div class="p-6">
+      <div class="mb-6">
+        <h4 class="font-semibold text-gray-800 mb-2">Selected Plan: <span id="selected-plan">Professional</span></h4>
+        <p class="text-gray-600">You'll be charged <span id="selected-price">$149</span> for your first <span id="billing-period">month</span>.</p>
+      </div>
+
+      <div class="mb-6">
+        <h4 class="font-semibold text-gray-800 mb-3">Select Payment Method</h4>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="border border-gray-300 rounded-lg p-4 flex items-center justify-between cursor-pointer hover:border-primary transition-colors payment-option" data-method="googlepay">
+            <div class="flex items-center">
+             <div class="w-10 h-10 flex items-center justify-center text-gray-700">
+                <i class="ri-google-pay-fill ri-2x"></i>
+              </div>
+              <span class="ml-3 text-gray-700">Google Pay</span>
+            </div>
+          </div>
+          <div class="border border-gray-300 rounded-lg p-4 flex items-center justify-between cursor-pointer hover:border-primary transition-colors payment-option" data-method="paypal">
+            <div class="flex items-center">
+              <div class="w-10 h-10 flex items-center justify-center text-gray-700">
+                <i class="ri-paypal-fill ri-2x"></i>
+              </div>
+              <span class="ml-3 text-gray-700">PayPal</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">* Payment notification will be sent automatically after successful transaction</p>
+      </div>
+
+      <div class="mb-6">
+        <div class="flex items-center mb-4">
+          <div class="custom-checkbox checked" id="terms-checkbox"></div>
+          <label for="terms-checkbox" class="ml-3 text-sm text-gray-600">I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a>.</label>
+        </div>
+      </div>
+
+      <!-- PayPal Button Section -->
+      <div class="mb-6 hidden" id="paypal-section">
+        <h4 class="text-sm text-gray-800 font-semibold mb-2">Complete your payment with PayPal</h4>
+        <div id="paypal-button-container"></div>
+        <p class="text-sm text-gray-500 mt-2 text-center">Secure and instant payment powered by PayPal</p>
+      </div>
+
+      <!-- Hidden default payment button -->
+      <button class="w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap" id="complete-payment">Complete Payment</button>
+
+      <p class="text-sm text-gray-500 text-center mt-4">Your payment is secure and encrypted</p>
+    </div>
+  </div>
+</div>
+
+<!-- JS Logic -->
+<script>
+  const paypalSection = document.getElementById("paypal-section");
+  const completePaymentBtn = document.getElementById("complete-payment");
+
+  // Handle payment method selection
+  document.querySelectorAll(".payment-option").forEach(option => {
+    option.addEventListener("click", () => {
+      const method = option.getAttribute("data-method");
+
+      // Toggle UI
+      document.querySelectorAll(".payment-option").forEach(o => o.classList.remove("border-blue-500"));
+      option.classList.add("border-blue-500");
+
+      if (method === "paypal") {
+        paypalSection.classList.remove("hidden");
+        completePaymentBtn.classList.add("hidden");
+      } else {
+        paypalSection.classList.add("hidden");
+        completePaymentBtn.classList.remove("hidden");
+      }
+    });
+  });
+
+  // Load PayPal Button
+  paypal.Buttons({
+    style: {
+      color: 'blue',
+      shape: 'rect',
+      label: 'paypal',
+      layout: 'vertical'
+    },
+    createOrder: function (data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          description: "Professional Plan - 1 Month",
+          amount: {
+            value: '149.00'
+          }
+        }]
+      });
+    },
+    onApprove: function (data, actions) {
+      return actions.order.capture().then(function (details) {
+        alert('Transaction completed by ' + details.payer.name.given_name);
+        document.getElementById("payment-modal").classList.add("hidden");
+      });
+    },
+    onError: function (err) {
+      console.error(err);
+      alert("Payment failed. Please try again.");
+    }
+  }).render('#paypal-button-container');
+</script>
+<!-- Demo Request Modal -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="demo-modal">
+<div class="bg-white rounded-lg shadow-xl max-w-xl w-full mx-4">
+<div class="p-6 border-b border-gray-200 flex justify-between items-center">
+<h3 class="text-xl font-bold text-gray-800">Schedule a Demo</h3>
+<button class="text-gray-500 hover:text-gray-700" id="close-demo-modal">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<form id="demo-request-form" class="p-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+<input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Company Name *</label>
+<input type="text" name="company" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+<input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+<input type="tel" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary">
+</div>
+<div class="md:col-span-2">
+<label class="block text-sm font-medium text-gray-700 mb-2">Company Size *</label>
+<select name="companySize" required class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary">
+<option value="">Select company size</option>
+<option value="1-10">1-10 employees</option>
+<option value="11-50">11-50 employees</option>
+<option value="51-200">51-200 employees</option>
+<option value="201-500">201-500 employees</option>
+<option value="501+">501+ employees</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<label class="block text-sm font-medium text-gray-700 mb-2">What are your primary security concerns? *</label>
+<textarea name="concerns" required rows="3" class="w-full px-4 py-2 border border-gray-300 rounded focus:ring-primary focus:border-primary"></textarea>
+</div>
+</div>
+<div class="flex items-center mb-6">
+<div class="custom-checkbox" id="demo-terms-checkbox"></div>
+<label class="ml-3 text-sm text-gray-600">I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a>.</label>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 rounded-button font-medium hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap">Submit Demo Request</button>
+</form>
+</div>
+</div>
+<!-- Demo Success Modal -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="demo-success-modal">
+<div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 p-6">
+<div class="text-center">
+<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-check-line ri-2x text-green-500"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Demo Request Submitted!</h3>
+<p class="text-gray-600 mb-6">Thank you for your interest. Your demo request is under review. We'll contact you shortly to schedule the demo.</p>
+<button class="bg-primary text-white px-6 py-2 rounded-button font-medium hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap" id="close-demo-success-modal">Close</button>
+</div>
+</div>
+</div>
+<!-- Success Modal -->
+<div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="success-modal">
+<div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 p-6">
+<div class="text-center">
+<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-check-line ri-2x text-green-500"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Payment unsuccessfull!</h3>
+<p class="text-gray-600 mb-6">Thank you for choosing Cybersapiens. Currently we are not accepting google pay, please use Paypal for payment.</p>
+<button class="bg-primary text-white px-6 py-2 rounded-button font-medium hover:bg-blue-700 transition-colors !rounded-button whitespace-nowrap" id="close-success-modal">Continue</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu Script -->
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+<!-- Pricing Toggle Script -->
+<script id="pricing-toggle-script">
+document.addEventListener('DOMContentLoaded', function() {
+const billingToggle = document.getElementById('billing-toggle');
+const basicPrice = document.getElementById('basic-price');
+const proPrice = document.getElementById('pro-price');
+const enterprisePrice = document.getElementById('enterprise-price');
+const billingPeriod = document.getElementById('billing-period');
+billingToggle.addEventListener('change', function() {
+if (this.checked) {
+// Annual pricing
+basicPrice.textContent = '$39';
+proPrice.textContent = '$119';
+enterprisePrice.textContent = '$319';
+if (billingPeriod) billingPeriod.textContent = 'year';
+} else {
+// Monthly pricing
+basicPrice.textContent = '$49';
+proPrice.textContent = '$149';
+enterprisePrice.textContent = '$399';
+if (billingPeriod) billingPeriod.textContent = 'month';
+}
+});
+});
+</script>
+<!-- Custom Checkbox Script -->
+<script id="custom-checkbox-script">
+document.addEventListener('DOMContentLoaded', function() {
+const privacyCheckbox = document.getElementById('privacy-checkbox');
+const termsCheckbox = document.getElementById('terms-checkbox');
+if (privacyCheckbox) {
+privacyCheckbox.addEventListener('click', function() {
+this.classList.toggle('checked');
+});
+}
+if (termsCheckbox) {
+termsCheckbox.addEventListener('click', function() {
+this.classList.toggle('checked');
+});
+}
+});
+</script>
+<!-- Chat Widget Script -->
+<script id="chat-widget-script">
+document.addEventListener('DOMContentLoaded', function() {
+const chatButton = document.getElementById('chat-button');
+const chatPopup = document.getElementById('chat-popup');
+const closeChat = document.getElementById('close-chat');
+chatButton.addEventListener('click', function() {
+chatPopup.classList.toggle('hidden');
+});
+closeChat.addEventListener('click', function() {
+chatPopup.classList.add('hidden');
+});
+});
+</script>
+<!-- Cookie Consent Script -->
+<script id="cookie-consent-script">
+document.addEventListener('DOMContentLoaded', function() {
+const cookieBanner = document.getElementById('cookie-banner');
+const acceptCookies = document.getElementById('accept-cookies');
+const declineCookies = document.getElementById('decline-cookies');
+// Check if user has already made a choice
+if (localStorage.getItem('cookieConsent')) {
+cookieBanner.classList.add('hidden');
+}
+acceptCookies.addEventListener('click', function() {
+localStorage.setItem('cookieConsent', 'accepted');
+cookieBanner.classList.add('hidden');
+});
+declineCookies.addEventListener('click', function() {
+localStorage.setItem('cookieConsent', 'declined');
+cookieBanner.classList.add('hidden');
+});
+});
+</script>
+<!-- Payment Modal Script -->
+<script id="learn-more-script">
+document.addEventListener('DOMContentLoaded', function() {
+const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+learnMoreButtons.forEach(button => {
+button.addEventListener('click', function() {
+const content = this.nextElementSibling;
+const icon = this.querySelector('i');
+content.classList.toggle('hidden');
+if (content.classList.contains('hidden')) {
+icon.classList.replace('ri-up-line', 'ri-down-line');
+} else {
+icon.classList.replace('ri-down-line', 'ri-up-line');
+}
+});
+});
+});
+</script>
+<script id="auth-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Check authentication status
+function checkAuth() {
+const isAuthenticated = localStorage.getItem('isAuthenticated');
+const isAdmin = localStorage.getItem('isAdmin');
+if (isAuthenticated === 'true' && isAdmin === 'true' && window.location.pathname === '/index.html') {
+window.location.href = '/admin.html';
+} else if (isAuthenticated === 'true' && window.location.pathname === '/index.html') {
+window.location.href = '/dashboard.html';
+}
+}
+// Run auth check
+checkAuth();
+// Handle login form submission
+const loginForm = document.getElementById('login-form');
+if (loginForm) {
+loginForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const email = document.getElementById('login-email').value;
+const password = document.getElementById('login-password').value;
+// Admin credentials check
+if (email === 'admin@example.com' && password === 'admin123') {
+localStorage.setItem('isAuthenticated', 'true');
+localStorage.setItem('isAdmin', 'true');
+localStorage.setItem('userEmail', email);
+window.location.href = '/admin.html';
+} else {
+// Regular user login
+localStorage.setItem('isAuthenticated', 'true');
+localStorage.setItem('isAdmin', 'false');
+localStorage.setItem('userEmail', email);
+window.location.href = '/dashboard.html';
+}
+});
+}
+// Handle trial registration
+const trialForm = document.getElementById('trial-form');
+if (trialForm) {
+trialForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const trialModal = document.getElementById('trial-success-modal');
+trialModal.classList.remove('hidden');
+});
+}
+});
+</script>
+<script id="payment-modal-script">
+document.addEventListener('DOMContentLoaded', function() {
+const paymentModal = document.getElementById('payment-modal');
+const closePaymentModal = document.getElementById('close-payment-modal');
+const basicPlanButton = document.getElementById('basic-plan-button');
+const proPlanButton = document.getElementById('pro-plan-button');
+const enterprisePlanButton = document.getElementById('enterprise-plan-button');
+const selectedPlan = document.getElementById('selected-plan');
+const selectedPrice = document.getElementById('selected-price');
+const billingToggle = document.getElementById('billing-toggle');
+const billingPeriod = document.getElementById('billing-period');
+const paymentOptions = document.querySelectorAll('.payment-option');
+const completePayment = document.getElementById('complete-payment');
+const successModal = document.getElementById('success-modal');
+const closeSuccessModal = document.getElementById('close-success-modal');
+function openPaymentModal(plan, price) {
+selectedPlan.textContent = plan;
+selectedPrice.textContent = price;
+billingPeriod.textContent = billingToggle.checked ? 'year' : 'month';
+paymentModal.classList.remove('hidden');
+}
+if (basicPlanButton) {
+basicPlanButton.addEventListener('click', function() {
+openPaymentModal('Basic Security', billingToggle.checked ? '$39' : '$49');
+});
+}
+if (proPlanButton) {
+proPlanButton.addEventListener('click', function() {
+openPaymentModal('Professional', billingToggle.checked ? '$119' : '$149');
+});
+}
+if (enterprisePlanButton) {
+enterprisePlanButton.addEventListener('click', function() {
+openPaymentModal('Enterprise', billingToggle.checked ? '$319' : '$399');
+});
+}
+if (closePaymentModal) {
+closePaymentModal.addEventListener('click', function() {
+paymentModal.classList.add('hidden');
+});
+}
+paymentOptions.forEach(option => {
+option.addEventListener('click', function() {
+paymentOptions.forEach(opt => opt.classList.remove('selected', 'border-primary', 'border-2'));
+this.classList.add('selected', 'border-primary', 'border-2');
+});
+});
+if (completePayment) {
+completePayment.addEventListener('click', function() {
+paymentModal.classList.add('hidden');
+successModal.classList.remove('hidden');
+});
+}
+if (closeSuccessModal) {
+closeSuccessModal.addEventListener('click', function() {
+successModal.classList.add('hidden');
+});
+}
+});
+</script>
+<!-- Demo Request Script -->
+<script id="demo-request-script">
+document.addEventListener('DOMContentLoaded', function() {
+const demoModal = document.getElementById('demo-modal');
+const openDemoModal = document.getElementById('open-demo-modal');
+const closeDemoModal = document.getElementById('close-demo-modal');
+const demoForm = document.getElementById('demo-request-form');
+const demoSuccessModal = document.getElementById('demo-success-modal');
+const closeDemoSuccessModal = document.getElementById('close-demo-success-modal');
+const demoTermsCheckbox = document.getElementById('demo-terms-checkbox');
+// Open demo modal
+const openDemoButtons = document.querySelectorAll('[href="#demo"], #open-demo-modal');
+openDemoButtons.forEach(button => {
+button.addEventListener('click', function(e) {
+e.preventDefault();
+demoModal.classList.remove('hidden');
+});
+});
+// Close demo modal
+if (closeDemoModal) {
+closeDemoModal.addEventListener('click', function() {
+demoModal.classList.add('hidden');
+});
+}
+// Toggle terms checkbox
+if (demoTermsCheckbox) {
+demoTermsCheckbox.addEventListener('click', function() {
+this.classList.toggle('checked');
+});
+}
+// Handle form submission
+if (demoForm) {
+demoForm.addEventListener('submit', function(e) {
+e.preventDefault();
+if (!demoTermsCheckbox.classList.contains('checked')) {
+const errorDiv = document.createElement('div');
+errorDiv.className = 'text-red-500 text-sm mt-2';
+errorDiv.textContent = 'Please agree to the Terms of Service and Privacy Policy.';
+demoTermsCheckbox.parentElement.appendChild(errorDiv);
+setTimeout(() => errorDiv.remove(), 3000);
+return;
+}
+// Collect form data
+const formData = new FormData(demoForm);
+const demoRequest = Object.fromEntries(formData.entries());
+// Store demo request in localStorage for admin review
+const demoRequests = JSON.parse(localStorage.getItem('demoRequests') || '[]');
+demoRequest.id = Date.now();
+demoRequest.status = 'pending';
+demoRequest.requestDate = new Date().toISOString();
+demoRequests.push(demoRequest);
+localStorage.setItem('demoRequests', JSON.stringify(demoRequests));
+// Show success message
+demoModal.classList.add('hidden');
+demoSuccessModal.classList.remove('hidden');
+demoForm.reset();
+demoTermsCheckbox.classList.remove('checked');
+});
+}
+// Close success modal
+if (closeDemoSuccessModal) {
+closeDemoSuccessModal.addEventListener('click', function() {
+demoSuccessModal.classList.add('hidden');
+});
+}
+});
+</script>
+<!-- Contact Form Script -->
+<script id="contact-form-script">
+document.addEventListener('DOMContentLoaded', function() {
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+contactForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const privacyCheckbox = document.getElementById('privacy-checkbox');
+if (!privacyCheckbox.classList.contains('checked')) {
+alert('Please agree to the Privacy Policy and Terms of Service.');
+return;
+}
+// Simulate form submission
+alert('Thank you for your message! Our team will contact you shortly.');
+contactForm.reset();
+privacyCheckbox.classList.remove('checked');
+});
+}
+});
+</script>
+<!-- Smooth Scroll Script -->
+<script id="smooth-scroll-script">
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+// Close mobile menu if open
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.add('hidden');
+}
+}
+});
+});
+});
+</script>
+</body>
+</html>
